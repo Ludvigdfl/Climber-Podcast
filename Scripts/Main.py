@@ -76,13 +76,13 @@ else:
 
 REPO_OWNER = "Ludvigdfl"
 REPO_NAME = "Climber-Podcast"
-GITHUB_IMAGE_PATH = f"Audio_File_{datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d')}.mp3"
+GITHUB_AUDIO = f"Audio_File_{datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d')}.mp3"
 BRANCH = "main"   
 
-url = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/Audio/{GITHUB_IMAGE_PATH}"
+url = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/Audio/{GITHUB_AUDIO}"
 
 # Read and encode the audio file
-with open(GITHUB_IMAGE_PATH, "rb") as img_file:
+with open(GITHUB_AUDIO, "rb") as img_file:
     audio_content = base64.b64encode(img_file.read()).decode("utf-8")
 
 # Check if file already exists (needed for updates)
