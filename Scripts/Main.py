@@ -10,7 +10,7 @@ if not TOKEN:
     exit(1)
     
 REPO_OWNER = "Ludvigdfl"
-REPO_NAME = "Climber-Vasaloppet"
+REPO_NAME = "Climber-Podcast"
 TEXT_FILE = "file.txt"   
 BRANCH = "main"
 
@@ -75,7 +75,7 @@ else:
 ########################################
 
 REPO_OWNER = "Ludvigdfl"
-REPO_NAME = "Climber-Vasaloppet"
+REPO_NAME = "Climber-Podcast"
 GITHUB_IMAGE_PATH = f"Audio_File_{datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d')}.mp3"
 BRANCH = "main"   
 
