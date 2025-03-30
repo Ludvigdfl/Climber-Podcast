@@ -11,7 +11,7 @@ if not TOKEN:
     
 REPO_OWNER = "Ludvigdfl"
 REPO_NAME = "Climber-Podcast"
-TEXT_FILE = "file.txt"   
+TEXT_FILE = "Run_Text.txt"   
 BRANCH = "main"
 
 
