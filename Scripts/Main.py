@@ -19,7 +19,7 @@ BRANCH = "main"
 ### 1. Get text file to create speach from ###
 ##############################################
 
-url = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/{TEXT_FILE}"
+url = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/Scripts/{TEXT_FILE}"
 
 headers = {
     "Authorization": f"Bearer {TOKEN}",
@@ -79,7 +79,7 @@ REPO_NAME = "Climber-Podcast"
 GITHUB_IMAGE_PATH = f"Audio_File_{datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d')}.mp3"
 BRANCH = "main"   
 
-url = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/{GITHUB_IMAGE_PATH}"
+url = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/Audio/{GITHUB_IMAGE_PATH}"
 
 # Read and encode the audio file
 with open(GITHUB_IMAGE_PATH, "rb") as img_file:
